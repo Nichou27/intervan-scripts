@@ -1,12 +1,12 @@
-import {chromium} from "playwright"
+import { chromium } from "playwright"
 
-interface URLs {
+export interface URLs {
     loginUrl: string;
     expensesMatrixUrl: string;
     resourcesMatrixUrl: string; 
 }
 
-async function deleteMatrix({loginUrl, expensesMatrixUrl, resourcesMatrixUrl}: URLs): Promise<void> {
+async function deleteMatrix({ loginUrl, expensesMatrixUrl, resourcesMatrixUrl }: URLs): Promise<void> {
     const browser = await chromium.launch({ headless: false });
     const page = await browser.newPage();
     page.on("dialog", async (dialog) => {

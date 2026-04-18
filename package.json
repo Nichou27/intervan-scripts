@@ -2,6 +2,7 @@
   "name": "intervan-scripts",
   "version": "0.1.0",
   "description": "",
+  "type": "module",
   "main": "main.ts",
   "scripts": {
     "start": "tsx main.ts"

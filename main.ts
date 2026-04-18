@@ -1,7 +1,7 @@
-import deleteMatrix from "./src/playwright/scripts/delete-matrix"
-import { Animana } from "./src/municipalities/municipalities"
+import deleteMatrix from "@scripts/delete-matrix.ts"
+import Animana from "@municipalities/municipalities.ts"
 import { Command } from "commander"
-import exampleAction from "./src/playwright/scripts/example-action"
+import exampleAction from "@scripts/example-action.ts"
 
 async function main(): Promise<void> {
     const program = new Command();

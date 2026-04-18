@@ -1,4 +1,4 @@
-import { URLs } from "../../src/playwright/scripts/delete-matrix"
+import { type URLs } from "@scripts/delete-matrix.ts"
 
 const Animana: URLs = {
     loginUrl: "https://sistemas.intervan.com.ar/animana/aplicacion.php?fs=1",
@@ -6,4 +6,4 @@ const Animana: URLs = {
     resourcesMatrixUrl: "https://sistemas.intervan.com.ar/animana/aplicacion.php?tm=1&tcm=icm0794712933109000131&ai=contabilidad||109000132&tcm=icm0205603632109000132"
 }
 
-export { Animana };
+export default Animana;
