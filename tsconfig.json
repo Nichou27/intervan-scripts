@@ -4,12 +4,11 @@
       "paths": {
 	"@scripts/*": ["src/playwright/scripts/*"],
 	"@municipalities/*": ["src/municipalities/*"]
-      }
+      },
     "rootDir": "./src",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "target": "es2022",
-    "types": ["node"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
     "noEmit": true,  
     "lib": ["ES2022"],
     "types": ["node"],
@@ -26,8 +25,10 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "exclude": {
-      "playwright.config.ts"
-    }
+    "exclude":
+      [
+	"tests/**/*.js",
+	"playwright.config.ts"
+      ]
   }
 }
