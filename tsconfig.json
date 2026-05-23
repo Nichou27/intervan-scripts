@@ -3,32 +3,26 @@
       "baseUrl": ".",
       "paths": {
 	"@scripts/*": ["src/playwright/scripts/*"],
-	"@municipalities/*": ["src/municipalities/*"]
-      },
+	"@municipalities/*": ["src/municipalities/*"],
+	"@pdf/*": ["src/pdf/*"]  
+    },
     "rootDir": "./src",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
     "target": "ES2022",
     "noEmit": true,  
     "lib": ["ES2022"],
     "types": ["node"],
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
     "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": false,
+    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
-    "exclude":
-      [
-	"tests/**/*.js",
-	"playwright.config.ts"
-      ]
+    "skipLibCheck": true,  
   }
 }
