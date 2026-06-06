@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "type": "module",
-  "main": "main.ts",
+  "main": "src/main.ts",
   "scripts": {
-    "start": "tsx main.ts"
+    "start": "tsx src/main.ts"
   },
   "keywords": [],
   "author": "Ignacio Gonzalez",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "commander": "^14.0.3",
-    "pdf-parse": "^2.4.5"
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.60.0"
   }
 }

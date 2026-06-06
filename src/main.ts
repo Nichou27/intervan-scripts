@@ -1,5 +1,5 @@
 import deleteMatrix from "@scripts/delete-matrix.ts"
-import Animana from "@municipalities/municipalities.ts"
+import Animana from "@municipalities/animana.ts"
 import { Command } from "commander"
 import exampleAction from "@scripts/example-action.ts"
 import parseBankPDF from "@pdf/parse-bank-pdf.ts"
